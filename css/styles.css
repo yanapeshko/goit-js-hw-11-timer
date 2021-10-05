@@ -1,0 +1,81 @@
+body {
+  background: rgb(219, 207, 207) url("../images/bg.gif") repeat;
+  color: #fff;
+  -moz-text-shadow: 0 -1px 0 #000;
+  -webkit-text-shadow: 0 -1px 0 #000;
+  text-shadow: 0 -1px 0 #000;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.bg-gradient {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  margin: -500px 0 0 -500px;
+  background: url("../images/bg-gradient.png") no-repeat center;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -400px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  position: relative;
+  margin-left: 30px;
+  width: 70px;
+  font-size: 40px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(28, 29, 28);
+  color: rgb(202, 198, 198);
+  box-shadow: -1px 13px 28px 18px rgba(34, 60, 80, 0.16);
+}
+.value {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #000;
+  background-image: linear-gradient(
+    bottom,
+    #000000 2%,
+    #3c3c3c 50%,
+    #000000 100%
+  );
+}
+
+.label {
+  position: absolute;
+  font-size: 16px;
+  bottom: -30px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #777;
+}
