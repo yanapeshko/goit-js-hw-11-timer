@@ -53,5 +53,5 @@ class CountdownTimer {
   }
 }
 
-const newTimer = new CountdownTimer("#timer-1", new Date("Jul 17, 2022"));
+const newTimer = new CountdownTimer("#timer-1", new Date("Nov 19, 2021"));
 newTimer.startTimer();
